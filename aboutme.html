@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>About me</title>
+    <style>
+        .container {
+            text-align: center;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        body {
+            background: #2A7B9B;
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        }
+        .glow {
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        h3, p {
+            font-family: fantasy;
+        }
+
+        @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007fe6, 0 0 40px #007fe6, 0 0 50px #007fe6, 0 0 60px #007fe6, 0 0 70px #007fe6;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #007fe6, 0 0 40px #007fe6, 0 0 50px #4dc4ff, 0 0 60px #4dc4ff, 0 0 70px #4dc4ff, 0 0 80px #4dc4ff;
+        }
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            /* Set the hr color */
+            background-color: #333;  /* Modern Browsers */
+        }
+
+        .navbar {
+            display:flex; margin-left:50px;
+            padding:20px;
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+
+        .navbar > a {
+            margin-left:10px;
+            margin-right:10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header style="display: flex; align-items: center;">
+        <img src="./photo_2025-05-02_12-09-13.jpg" width="48px" height="48px" />
+        <h1 style="margin-left:20px">Nulldog: About me</h1>
+        <div class="navbar">
+            <a href="./index.html">Main page</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./aboutme.html">About me</a>
+        </div>
+        <p style="margin-left:20px;">Hosted on GitHub Pages</p>
+    </header>
+    <hr>
+    <div>
+        <h1>My story</h1>
+        <p>I started coding since childhood. I found technology really amazing back then and still admire its complexity. I work with multiple platforms like Windows, Linux and Android.</p>
+        <p>I also like algebra and geometry. These subjects are really useful in programming and development. Challenges that each problem offers to overcome help me develop critical and logical thinking.</p>
+        <h2>Programming languages I work with:</h2>
+        <ul>
+            <li>C#</li>
+            <li>C/C++</li>
+            <li>Java & Kotlin</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Rust</li>
+            <li>Go</li>
+            <li>HTML (technically not a language, but useful skill)</li>
+        </ul>
+        <h2>Frameworks: </h2>
+        <ul>
+            <li>Desktop</li>
+            <ul>
+                <li>Windows Forms</li>
+                <li>WinAPI</li>
+                <li>Qt</li>
+            </ul>
+            <li>NVIDIA CUDA</li>
+            <li>Game dev.</li>
+            <ul>
+                <li>OpenGL</li>
+                <li>Unity</li>
+            </ul>
+            <li>Servers</li>
+            <ul>
+                <li>Node.JS</li>
+                <li>Flask</li>
+            </ul>
+        </ul>
+        <br>
+        <p>Needless to say, I worked with embedded systems and microcontrollers like Arduino, ESP8266/32, Raspberry Pi SBC and Pico.</p>
+        <p></p>
+    </div>
+    <hr>
+    <footer>
+        <p>©Nulldog 2025</p>
+        <p>Contacts: oleh@nulldog.xyz</p>
+    </footer>
+</body>
+</html>

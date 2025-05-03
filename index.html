@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming soon...</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Nulldog</title>
     <style>
-        div {
+        .container {
             text-align: center;
             align-items: center;
             top: 50%;
@@ -38,14 +39,53 @@
             text-shadow: 0 0 20px #fff, 0 0 30px #007fe6, 0 0 40px #007fe6, 0 0 50px #4dc4ff, 0 0 60px #4dc4ff, 0 0 70px #4dc4ff, 0 0 80px #4dc4ff;
         }
         }
+
+        hr {
+            border: none;
+            height: 5px;
+            /* Set the hr color */
+            background-color: #333;  /* Modern Browsers */
+        }
+
+        .navbar {
+            display:flex; margin-left:50px;
+            padding:20px;
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+
+        .navbar > a {
+            margin-left:10px;
+            margin-right:10px;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
+    <header style="display: flex; align-items: center;">
+        <img src="./photo_2025-05-02_12-09-13.jpg" width="48px" height="48px" />
+        <h1 style="margin-left:20px">Nulldog</h1>
+        <div class="navbar">
+            <a href="./index.html">Main page</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./aboutme.html">About me</a>
+        </div>
+        <p style="margin-left:20px;">Hosted on GitHub Pages</p>
+    </header>
+    <hr>
     <div>
-        <h1 class="glow">Coming soon</h1>
-        <h3>Something incredible will be here soon! This domain is bought recently.</h3>
-        <h3>I am working on my personal website where you will see my projects.</h3>
-        <p>Stay safe!</p>
+        <h1>Welcome</h1>
+        <p>My name's Oleh. I am a developer. On this website you can see all my projects.</p>
+        <p>Some source code is on GitHub. For bigger projects that have bigger source code files size please request source code at <a href="mailto:oleh@nulldog.xyz">oleh@nulldog.xyz</a>.</p>
+        <br/>
+        <h2>About me</h2>
+        <p>I started coding since childhood. I found technology really amazing back then and still admire its complexity. I work with multiple platforms like Windows, Linux and Android.</p>
+        <h5>For more information visit <a href="aboutme.html">About me</a> page</h5>
     </div>
+    <hr>
+    <footer>
+        <p>©Nulldog 2025</p>
+        <p>Contacts: oleh@nulldog.xyz</p>
+    </footer>
 </body>
 </html>
