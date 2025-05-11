@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://nulldog.xyz/sitemap.xml
