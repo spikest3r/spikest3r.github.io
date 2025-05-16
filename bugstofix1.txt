@@ -1,0 +1,12 @@
+Ancient Forest Bug List
+=======================
+
+- Fix typo: "back ten" → "back then"
+- Dialog text is cut off
+- Tutorial doesn't fit on screen
+- Rocks don’t subtract in Doozy quest
+- Doozy breaks StoryController – fox skips dialog
+- Enemies start fighting in the air – should wait until they land
+- Make collider bigger
+- Tutorial plays even with save file
+- Save doesn't get removed properly
