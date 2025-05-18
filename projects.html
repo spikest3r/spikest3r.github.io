@@ -4,93 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="Nulldog. Here are showcased projects including Adventures of Zylo, Ancient Forest etc.">
+    <meta name="description" content="Nulldog (spikest3r). Here are showcased projects including Adventures of Zylo, Ancient Forest etc.">
+    <link rel="stylesheet" href="styles/projects.css"> <!-- Page specific stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/glow.css"> <!-- Optional stylesheet -->
     <title>Projects</title>
-    <style>
-        .container {
-            text-align: center;
-            align-items: center;
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        body {
-            background: #2A7B9B;
-            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-        }
-        .glow {
-        color: #fff;
-        text-align: center;
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
-        -moz-animation: glow 1s ease-in-out infinite alternate;
-        animation: glow 1s ease-in-out infinite alternate;
-        }
-
-        @keyframes glow {
-        from {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007fe6, 0 0 40px #007fe6, 0 0 50px #007fe6, 0 0 60px #007fe6, 0 0 70px #007fe6;
-        }
-        to {
-            text-shadow: 0 0 20px #fff, 0 0 30px #007fe6, 0 0 40px #007fe6, 0 0 50px #4dc4ff, 0 0 60px #4dc4ff, 0 0 70px #4dc4ff, 0 0 80px #4dc4ff;
-        }
-        }
-
-        hr {
-            border: none;
-            height: 5px;
-            /* Set the hr color */
-            background-color: #333;  /* Modern Browsers */
-        }
-
-        .project-view {
-            display: inline-grid;
-            grid-template-columns: auto auto auto;
-            background-color: transparent;
-            padding: 5px;
-        }
-
-        .project-view > div {
-            background-color: #f1f1f1;
-            border: 2px solid black;
-            padding: 10px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .link {
-            padding: 10px;
-        }
-
-        .image-gallery {
-             margin:5px; border: 1px black solid;
-        }
-
-        .navbar {
-            display:flex; margin-left:50px;
-            padding:20px;
-            border: 2px solid black;
-            background-color: aquamarine;
-        }
-
-        .navbar > a {
-            margin-left:10px;
-            margin-right:10px;
-            font-size: 20px;
-        }
-    </style>
 </head>
 <body>
     <header style="display: flex; align-items: center;">
-        <img src="./photo_2025-05-02_12-09-13.jpg" width="48px" height="48px" />
-        <h1 style="margin-left:20px">Nulldog: Projects</h1>
-        <div class="navbar">
-            <a href="./index.html">Main page</a>
+        <img src="/images/icon.jpg" width="48px" height="48px" />
+        <h1 style="margin-left:20px">Nulldog</h1>
+        <nav>
+            <a href="/">Main page</a>
             <a href="./projects.html">Projects</a>
             <a href="./aboutme.html">About me</a>
-        </div>
-        <p style="margin-left:20px;">Hosted on GitHub Pages</p>
+        </nav>
     </header>
     <hr>
     <div>
@@ -100,64 +28,70 @@
         <p style="margin-bottom: -10px;">Note: WebGL games can be unstable. Shipment of larger games to WebGL is possible, but UX is not smooth.</p>
         <br/>
         <h2 style="padding-top: 15px;">Projects</h2>
-        <div class="project-view">
-            <div>
-                <h2>Adventures of Zylo</h2>
-                <h3>Unity, Windows & WebGL</h3>
-                <p>Note: minor not critical bugs</p>
-                <div style="display: flex; justify-content: center;">
-                    <a href="./zylo1.png"><img style="width:192px; height:108px;" class="image-gallery" src="./zylo1.png"></a>
-                    <a href="./zylo2.png"><img style="width:192px; height:108px;" class="image-gallery" src="./zylo2.png"></a>
+        <section class="projects">
+            <div class="project-group">
+            <article class="project-card">
+                <h3>Adventures of Zylo</h3>
+                <p class="tech">Unity</p>
+                <p>Minor bugs</p>
+                <div class="project-images">
+                    <img src="/images/zylo1.png" alt="Screenshot 1 Adventures of Zylo" />
+                    <img src="/images/zylo2.png" alt="Screenshot 2 Adventures of Zylo" />
                 </div>
-                <div style="display:inline;">
-                    <a class="link" href="/zylogame">Play now</a>
-                    <a class="link" href="mailto:oleg@nulldog.xyz">Request source code</a>
+                <a href="./zylogame/">Play now</a>
+            </article>
+            <article class="project-card">
+                <h3>Volunteer app</h3>
+                <p class="tech">Java + Python (Flask)</p>
+                <p>Sometimes crashes</p>
+                <div class="project-images">
+                    <img src="/images/volapp1.jpg" style="width: 100px;" alt="Screenshot 1 Volunteer App" />
+                    <img src="/images/volapp2.jpg" style="width: 100px;" alt="Screenshot 2 Volunteer App" />
+                    <img src="/images/volapp3.jpg" style="width: 100px;" alt="Screenshot 3 Volunteer App" />
                 </div>
+                <a href="https://github.com/spikest3r/VolunteerApp">Source code</a>
+            </article>
             </div>
-            <div>
-                <h2>Volunteer App</h2>
-                <h3>Android Java, Backend Python + Flask</h3>
-                <p>Sometimes crashes, will be fixed soon</p>
-                <div style="display: flex; justify-content: center;">
-                    <a href="./volapp1.jpg"><img style="width:59px; height:128px;" class="image-gallery" src="./volapp1.jpg"></a>
-                    <a href="./volapp2.jpg"><img style="width:59px; height:128px;" class="image-gallery" src="./volapp2.jpg"></a>
-                    <a href="./volapp3.jpg"><img style="width:59px; height:128px;" class="image-gallery" src="./volapp3.jpg"></a>
+            <div class="project-group">
+            <article class="project-card">
+                <h3>Netflix Viewing History CSV Summary</h3>
+                <p class="tech">Python</p>
+                <div class="project-images">
+                    <img src="/images/nvh1.png" alt="Screenshot 1 Netflix Viewing History Summary" />
+                    <img src="/images/nvh2.png" alt="Screenshot 2 Netflix Viewing History Summary" />
                 </div>
-                <div style="display:inline">
-                    <a href="https://github.com/spikest3r/VolunteerApp">GitHub</a>
-                </div>
-            </div>
-            <div>
-                <h2>Netflix Viewing History CSV Summary</h2>
-                <h3>Python</h3>
-                <p>I will try to make web version too (JavaScript)</p>
-                <div style="display: flex; justify-content: center;">
-                    <a href="./nvh1.png"><img style="width: 87px; height: 89px" class="image-gallery" src="./nvh1.png"></a>
-                    <a href="./nvh2.png"><img style="width: 87px; height: 89px" class="image-gallery" src="./nvh2.png"></a>
-                </div>
-                <a style="display:inline" href="https://github.com/spikest3r/NetflixViewingHistory">GitHub</a>
-            </div>
-            <div>
-                <h2>Personal website</h2>
-                <h3>HTML</h3>
+                <a href="https://github.com/spikest3r/NetflixViewingHistory">Source code</a>
+            </article>
+            <article class="project-card">
+                <h3>Personal website</h3>
+                <p class="tech">HTML</p>
                 <p>nulldog.xyz (this website)</p>
-                <a href="https://github.com/spikest3r/spikest3r.github.io">GitHub</a>
+                <div class="project-images">
+                    <img src="/images/nulldog.png" alt="Screenshot Nulldog" />
+                </div>
+                <a href="https://github.com/spikest3r/spikest3r.github.io">Source code</a>
+            </article>
             </div>
-            <div>
-                <h2>Ancient Forest</h2>
-                <h3>Unity game</h3>
+            <div class="project-group">
+            <article class="project-card">
+                <h3>Ancient Forest</h3>
+                <p class="tech">Unity</p>
                 <p>Will fix bugs that sometimes affect gameplay <a href="./bugstofix1.txt">List</a></p>
-                <div style="display: flex; justify-content: center;">
-                    <a href="./af1.png"><img style="width: 164px; height: 92px" class="image-gallery" src="./af1.png"></a>
-                    <a href="./af2.png"><img style="width: 164px; height: 92px" class="image-gallery" src="./af2.png"></a>
+                <div class="project-images">
+                    <img src="/images/af1.png" alt="Screenshot 1 Ancient Forest" />
+                    <img src="/images/af2.png" alt="Screenshot 2 Ancient Forest" />
                 </div>
-                <div style="display:inline;">
-                    <a class="link" href="https://drive.google.com/file/d/16HOQP8Iq6-GPhg8RdGRzE2UCG5QOonLG/view?usp=sharing">Download</a>
-                    <a class="link" href="mailto:oleg@nulldog.xyz">Request source code</a>
-                </div>
+                <a href="https://drive.google.com/file/d/16HOQP8Iq6-GPhg8RdGRzE2UCG5QOonLG/view?usp=sharing">Download</a>
+            </article>
+            <article class="project-card">
+                <h3>Lab Escape</h3>
+                <p id="comingsoon" class="glow">
+                    Coming soon...
+                </p>
+                <p>Expected, but not guaranteed date: until May 24th 2025</p>
+            </article>
             </div>
-            <!-- add by 3 because design breaks -->
-        </div>
+        </section>
     </div>
     <hr>
     <footer>

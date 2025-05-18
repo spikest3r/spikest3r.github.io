@@ -1,0 +1,85 @@
+.projects {
+    display: grid;
+    gap: 24px;
+    padding: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 100%; /* Changed from fit-content */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.project-card > h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.project-card > p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: -20px;
+}
+
+.project-card > a {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.project-images {
+    display:flex;
+    justify-content: center;
+}
+
+.project-images > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+    display: block;
+    margin-top: 10px;
+    align-self: center;
+    margin: 10px;
+}
+
+.project-group {
+    display: flex;
+}
+
+#comingsoon {
+    font-size: 3em;
+    margin-top: 40px;
+}
+
+/* Mobile fallback: stack images vertically */
+@media (max-width: 480px) {
+  .project-images {
+    flex-direction: column;
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .project-images img {
+    height: auto;
+    width: 90%;
+  }
+  .project-group {
+    display:contents;
+    }
+.project-card {
+    margin: 0px;
+}
+#comingsoon {
+    font-size: 2.2em;
+    margin-top: 0px;
+}
+}
